@@ -17,4 +17,3 @@ categories:
 change-template: '* $TITLE ($URL) - @$AUTHOR'
 template: |
   $CHANGES
-  $CONTRIBUTORS
