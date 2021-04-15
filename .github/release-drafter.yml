@@ -1,0 +1,20 @@
+name-template: 'v$NEXT_PATCH_VERSION'
+tag-template: 'v$NEXT_PATCH_VERSION'
+categories:
+  - title: '🚀 New Features'
+    label: 'new feature'
+  - title: '🔬 Improvements'
+    label: 'enhancement'
+  - title: '🐞 Bug Fixes'
+    label: 'bug'
+  - title: '📄 Documentation updates'
+    label: 'documentation'
+  - title: '🛠️ Development improvements'
+    label: 'chore'
+  - title: '📦 Dependency updates'
+    label: 'dependencies'
+
+change-template: '* $TITLE ($URL) - @$AUTHOR'
+template: |
+  $CHANGES
+  $CONTRIBUTORS
