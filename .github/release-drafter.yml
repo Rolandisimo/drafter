@@ -1,5 +1,5 @@
-name-template: 'v$NEXT_PATCH_VERSION'
-tag-template: 'v$NEXT_PATCH_VERSION'
+name-template: '$NEXT_PATCH_VERSION'
+tag-template: '$NEXT_PATCH_VERSION'
 categories:
   - title: '🚀 New Features'
     label: 'new feature'
@@ -14,6 +14,24 @@ categories:
   - title: '📦 Dependency updates'
     label: 'dependencies'
 
-change-template: '* $TITLE ($URL) - @$AUTHOR'
+version-resolver:
+  major:
+    labels:
+      - 'major'
+  minor:
+    labels:
+      - 'minor'
+  patch:
+    labels:
+      - 'patch'
+  default: patch
+
+change-template: |
+  $NUMBER $TITLE ($URL) - @$AUTHOR
+  $BODY
+
 template: |
   $CHANGES
+
+  #   Contributors 
+  🕺 $CONTRIBUTORS
