@@ -27,7 +27,7 @@ version-resolver:
   default: patch
 
 change-template: |
-  $NUMBER $TITLE ($URL) - @$AUTHOR
+  * $TITLE ($URL) - @$AUTHOR
   $BODY
 
 template: |
