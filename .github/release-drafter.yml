@@ -1,5 +1,3 @@
-name-template: '$NEXT_PATCH_VERSION'
-tag-template: '$NEXT_PATCH_VERSION'
 categories:
   - title: '🚀 New Features'
     label: 'new feature'
@@ -25,6 +23,19 @@ version-resolver:
     labels:
       - 'patch'
   default: patch
+
+autolabeler:
+  - label: 'chore'
+    files:
+      - '*.md'
+    branch:
+      - '/chore\/.+/'
+  - label: 'bug'
+    branch:
+      - '/fix\/.+/'
+  - label: 'enhancement'
+    branch:
+      - '/feature\/.+/'
 
 change-template: |
   * $TITLE ($URL) - @$AUTHOR
