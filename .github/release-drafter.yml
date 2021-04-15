@@ -44,8 +44,8 @@ change-template: |
   $BODY
 
 template: |
-  # 👷 Changes
+  # Changes
   $CHANGES
 
-  # 🕺 Contributors 
+  # Contributors
   $CONTRIBUTORS
